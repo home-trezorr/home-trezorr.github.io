@@ -1,31 +1,339 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trezor Suite</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body class="bg-gray-100">
-
-  <header class="bg-green-600 text-white p-4">
-    <h1 class="text-3xl font-bold">Trezor Suite</h1>
-    <nav class="mt-2">
-      <a href="index.html" class="text-white px-2">Home</a>
-      <a href="suite.html" class="text-white px-2">Trezor Suite</a>
-      <a href="wallet.html" class="text-white px-2">Trezor Hardware Wallet</a>
-      <a href="bridge.html" class="text-white px-2">Trezor Bridge</a>
-    </nav>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+    Trezor Suite App (Official) | Desktop & Web Crypto Management
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Inter', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-white text-gray-900">
+  <header class="bg-green-700 text-white">
+   <div class="container mx-auto flex justify-between items-center py-4 px-6">
+    <div class="flex items-center">
+     <img alt="Trezor Logo" class="h-10" height="40" src="https://storage.googleapis.com/a1aa/image/rzC4w0VctLogBtmD2ucxdxUDaIb9nzQTFy0RUOKVsBmnhJ5E.jpg" width="100"/>
+     <nav class="ml-10 space-x-4">
+      <a class="hover:underline" href="#">
+       Products
+      </a>
+      <a class="hover:underline" href="#">
+       App
+      </a>
+      <a class="hover:underline" href="#">
+       Coins
+      </a>
+      <a class="hover:underline" href="#">
+       Learn
+      </a>
+      <a class="hover:underline" href="#">
+       Support
+      </a>
+     </nav>
+    </div>
+    <div class="flex items-center space-x-4">
+     <a class="hover:underline" href="#">
+      EN
+     </a>
+     <a class="hover:underline" href="#">
+      Sign In
+     </a>
+     <a class="hover:underline" href="#">
+      Cart
+     </a>
+     <button class="bg-white text-green-700 px-4 py-2 rounded">
+      Get your Trezor
+     </button>
+    </div>
+   </div>
   </header>
-
-  <main class="p-8">
-    <h2 class="text-2xl font-bold mb-4">Manage Your Crypto with Trezor Suite</h2>
-    <p class="text-lg">Trezor Suite offers an all-in-one solution for managing your cryptocurrencies securely. Download the app and gain full control over your assets.</p>
+  <div class="bg-green-800 text-center text-white py-2">
+   Trezor Model One &amp; Trezor Model T available at a new reduced price!
+   <a class="underline" href="#">
+    Shop Now
+   </a>
+  </div>
+  <main class="container mx-auto px-6 py-12">
+   <section class="text-center mb-12">
+    <h1 class="text-4xl font-bold mb-4">
+     Take control of your
+     <span class="text-green-700">
+      crypto in Trezor Suite
+     </span>
+    </h1>
+    <p class="text-lg mb-6">
+     Manage your assets in one app.
+    </p>
+    <div class="flex justify-center space-x-4 mb-4">
+     <button class="bg-green-700 text-white px-6 py-3 rounded">
+      Download for desktop
+     </button>
+     <button class="bg-gray-200 text-gray-900 px-6 py-3 rounded">
+      Trezor Suite for web
+     </button>
+    </div>
+    <p class="text-sm text-gray-500">
+     Version: 24.12 · Signatures · Signing key 2020 · Signing key 2021
+    </p>
+   </section>
+   <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+    <div class="bg-gray-100 p-6 rounded-lg">
+     <h2 class="text-2xl font-bold mb-4">
+      Coin Management
+     </h2>
+     <p class="text-gray-700 mb-4">
+      Connect your hardware wallet with Trezor Suite. Send &amp; receive coins, track your portfolio, trade assets or pay for daily essentials directly from the app.
+     </p>
+     <img alt="Coin Management Interface" class="rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/qLNObt7JevXVOq8MfcCAVAW7tBHMpPiKkHSZbXTAyyvKGmkTA.jpg" width="400"/>
+    </div>
+    <div class="bg-gray-100 p-6 rounded-lg">
+     <h2 class="text-2xl font-bold mb-4">
+      Check &amp; Verify
+     </h2>
+     <p class="text-gray-700 mb-4">
+      No more second guessing. Every transaction on the app requires your explicit confirmation directly on your Trezor hardware wallet.
+     </p>
+     <img alt="Check &amp; Verify Interface" class="rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/fGYShLslERSUI6q1O6APuxeZzC4HMRFj5xQQGyLBYKvHGmkTA.jpg" width="400"/>
+    </div>
+   </section>
+   <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+    <div class="bg-gray-100 p-6 rounded-lg">
+     <h2 class="text-2xl font-bold mb-4">
+      Simple Setup &amp; Use
+     </h2>
+     <p class="text-gray-700 mb-4">
+      Set up within minutes. Grab your Trezor device, plug it in, open Trezor Suite, and let your crypto journey begin! Forget about the tech jargon, we speak your language.
+     </p>
+     <img alt="Simple Setup &amp; Use Interface" class="rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/XDllHIPmBbY1A1B2TklOrlMQF4HNnOvgT7sKPRhgDxPohJ5E.jpg" width="400"/>
+    </div>
+    <div class="bg-gray-100 p-6 rounded-lg">
+     <h2 class="text-2xl font-bold mb-4">
+      Create Multiple Wallets
+     </h2>
+     <p class="text-gray-700 mb-4">
+      Organize, archive &amp; use crypto the way you want.
+     </p>
+     <img alt="Create Multiple Wallets Interface" class="rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/dQrKWgPB2y74KdCQXiblni3LAxmoCEvYzF0pELMueR5GDTyJA.jpg" width="400"/>
+    </div>
+   </section>
+   <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+    <div class="bg-gray-100 p-6 rounded-lg">
+     <h2 class="text-2xl font-bold mb-4">
+      Get Boss-Level Security
+     </h2>
+     <p class="text-gray-700 mb-4">
+      Set up a hidden wallet.
+     </p>
+     <img alt="Get Boss-Level Security Interface" class="rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/7frA4EfDneQJaJrCr6Y8xG1efWuBvgZEDSPNzp37zi9R0wkcC.jpg" width="400"/>
+    </div>
+    <div class="bg-gray-100 p-6 rounded-lg">
+     <h2 class="text-2xl font-bold mb-4">
+      Earn More With Staking
+     </h2>
+     <p class="text-gray-700 mb-4">
+      Support the blockchain and collect rewards.
+     </p>
+     <img alt="Earn More With Staking Interface" class="rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/FfsVhsfQb0qedpqRDwe3kbTYADYDmKBrlB9sB4KWRaN3ZYSOB.jpg" width="400"/>
+    </div>
+   </section>
+   <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+    <div class="bg-gray-100 p-6 rounded-lg">
+     <h2 class="text-2xl font-bold mb-4">
+      Sync &amp; Track on Your Phone
+     </h2>
+     <p class="text-gray-700 mb-4">
+      Stay up to date with your portfolio using our mobile app.
+     </p>
+     <img alt="Sync &amp; Track on Your Phone Interface" class="rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/7o1zJGuF5a5EO1syypmyD8ecqwifeelTFZWYXw3ZvlNmZYSOB.jpg" width="400"/>
+    </div>
+    <div class="bg-gray-100 p-6 rounded-lg">
+     <h2 class="text-2xl font-bold mb-4">
+      Find the Best Deal
+     </h2>
+     <p class="text-gray-700 mb-4">
+      Compare exchanges, choose the best offer and trade.
+     </p>
+     <img alt="Find the Best Deal Interface" class="rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/JRmSFheP370kPqC0EYISejy7xLNe5zVjgYk8AVMBguB2MMJnA.jpg" width="400"/>
+    </div>
+   </section>
+   <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+    <div class="bg-gray-100 p-6 rounded-lg">
+     <h2 class="text-2xl font-bold mb-4">
+      Security &amp; privacy your way with the Trezor Suite app
+     </h2>
+     <p class="text-gray-700 mb-4">
+      Discover the app
+     </p>
+     <ul class="space-y-4">
+      <li class="flex items-center">
+       <i class="fas fa-shield-alt text-green-700 mr-4">
+       </i>
+       <span>
+        Tor network
+       </span>
+      </li>
+      <li class="flex items-center">
+       <i class="fas fa-coins text-green-700 mr-4">
+       </i>
+       <span>
+        Coin control
+       </span>
+      </li>
+      <li class="flex items-center">
+       <i class="fas fa-lock text-green-700 mr-4">
+       </i>
+       <span>
+        Taproot
+       </span>
+      </li>
+     </ul>
+    </div>
+    <div class="bg-gray-100 p-6 rounded-lg">
+     <img alt="Security &amp; Privacy Image" class="rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/SgrrvfIbgdTgNqswQ3V8WY77tbsjYvhdTU2qDPLoeAesMMJnA.jpg" width="400"/>
+     <button class="bg-green-700 text-white px-6 py-3 rounded mt-4">
+      Explore all features
+     </button>
+    </div>
+   </section>
+   <section class="text-center mb-12">
+    <h2 class="text-2xl font-bold mb-4">
+     Supports 1000s of coins &amp; tokens
+    </h2>
+    <div class="flex justify-center space-x-4">
+     <img alt="Coin 1" class="h-12" height="50" src="https://storage.googleapis.com/a1aa/image/ecBIgf2Ee8avTJXzE7Fd3X5wExS2xHfLZ62dThWYGbeDywkcC.jpg" width="50"/>
+     <img alt="Coin 2" class="h-12" height="50" src="https://storage.googleapis.com/a1aa/image/kQZIk4gR6dZdBtvWSXJQtfCu3PuZd7iyCucBGYv64VGDDTyJA.jpg" width="50"/>
+     <img alt="Coin 3" class="h-12" height="50" src="https://storage.googleapis.com/a1aa/image/b269BBVlyKLSNlVSYqkfPZTLO7a9QTtTHEfLq6jSefAsYYSOB.jpg" width="50"/>
+     <img alt="Coin 4" class="h-12" height="50" src="https://storage.googleapis.com/a1aa/image/Y4zfuNvQrWRmGi198I9VBihvmgmoBFdoEDGgKeAQAeoTMMJnA.jpg" width="50"/>
+     <img alt="Coin 5" class="h-12" height="50" src="https://storage.googleapis.com/a1aa/image/4PRm0yse9a3LK6XbuWyx33km113LgFshDHMEM5NDtsDKDTyJA.jpg" width="50"/>
+     <img alt="Coin 6" class="h-12" height="50" src="https://storage.googleapis.com/a1aa/image/0XiZ5mUUgeydLqKlqpOLkg5fZedJ2lLw8ObZmvG5ysrvMMJnA.jpg" width="50"/>
+     <img alt="Coin 7" class="h-12" height="50" src="https://storage.googleapis.com/a1aa/image/ljQDwtP2mBJJBJkK8DDovm0xsvdofnWX8NJNsbV7HEgQDTyJA.jpg" width="50"/>
+     <img alt="Coin 8" class="h-12" height="50" src="https://storage.googleapis.com/a1aa/image/GltupKm8fC0yNaO3zVWeAHzUgdmZu3AumaVJSleg33XcMMJnA.jpg" width="50"/>
+     <img alt="Coin 9" class="h-12" height="50" src="https://storage.googleapis.com/a1aa/image/viTlnoTRYjofNqSHQ6TNjvKHuURjtkOQtPOshtrino7IDTyJA.jpg" width="50"/>
+     <img alt="Coin 10" class="h-12" height="50" src="https://storage.googleapis.com/a1aa/image/lguTwmhH9G75Hh4c81Ifx2RHJeHW1wCi9mF1e902JCxnMMJnA.jpg" width="50"/>
+    </div>
+   </section>
+   <section class="bg-green-700 text-white text-center py-12">
+    <h2 class="text-3xl font-bold mb-4">
+     Take control of your future
+    </h2>
+    <img alt="Trezor Devices" class="mx-auto mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/GpLWfAQ0woX5aSOjo2DurO8O8UaAJbJDyHlnMCemea51MMJnA.jpg" width="600"/>
+    <button class="bg-white text-green-700 px-6 py-3 rounded">
+     Compare wallets
+    </button>
+   </section>
   </main>
-
-  <footer class="bg-gray-800 text-white p-4 mt-4">
-    <p>&copy; 2024 Trezor. All rights reserved.</p>
+  <footer class="bg-gray-900 text-white py-12">
+   <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+    <div>
+     <img alt="Trezor Logo" class="h-10 mb-4" height="40" src="https://storage.googleapis.com/a1aa/image/rzC4w0VctLogBtmD2ucxdxUDaIb9nzQTFy0RUOKVsBmnhJ5E.jpg" width="100"/>
+     <p class="text-gray-500">
+      © 2023 SatoshiLabs Group
+     </p>
+    </div>
+    <div>
+     <h3 class="text-lg font-bold mb-4">
+      Products
+     </h3>
+     <ul class="space-y-2">
+      <li>
+       <a class="hover:underline" href="#">
+        Trezor Suite
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Trezor Model T
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Model One
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Trezor Suite
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Trezor Suite
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div>
+     <h3 class="text-lg font-bold mb-4">
+      Support
+     </h3>
+     <ul class="space-y-2">
+      <li>
+       <a class="hover:underline" href="#">
+        Supported Coins
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        FAQ
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Firmware and Recovery
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        About Company
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Support
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div>
+     <h3 class="text-lg font-bold mb-4">
+      Company
+     </h3>
+     <ul class="space-y-2">
+      <li>
+       <a class="hover:underline" href="#">
+        About
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Terms of Use
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Affiliate Program
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Reseller Program
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Research
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
   </footer>
-
-</body>
+ </body>
 </html>
